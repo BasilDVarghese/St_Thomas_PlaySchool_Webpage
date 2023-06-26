@@ -1,0 +1,188 @@
+/* header section */
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Work+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+  --heading:#df7205;
+  --para:;
+  --para-tint:;
+  --white:;
+  --helper:#b25b04;
+  --helper-tint:;
+  --bg:#fcf1e6;
+  --gradient:linear-gradient(90deg, rgba(253,29,29,1) 10%, rgba(223,114,5,1) 56%);
+  --gradientSupport:-webkit-linear-gradient(90deg, rgba(253,29,29,1) 10%, rgba(223,114,5,1) 56%);
+  --shadow:0px 0px 40px 20px rgba(200, 105, 10, 0.3);
+  --black:#212529;
+  --shadowSupport: 0px 20px 20px 0px rgba(4, 3, 20, 0.3);
+}
+
+
+
+html{
+  font-size: 62.5%;
+  /* 1rem =10px */
+  overflow-x: hidden;
+}
+body{
+  overflow: hidden;
+}
+
+h1{
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: var(--heading);
+  font-size: 6rem;
+  font-weight: 1000;
+}
+
+h3{
+  font-family: 'Andika', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p{
+  font-family: 'Andika', sans-serif;
+  color: var(--para);
+  line-height: 1.8;
+  font-size: 1.7rem;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+    list-style: none;
+  }
+.header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #more {display: none;}
+  
+  .header .logo{
+    height: 8rem;
+  }
+  
+  .header .menubtn{
+    margin-right:0px ;
+  }
+  .header button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, rgba(253,29,29,1) 10%, rgba(223,114,5,1) 56%);
+    /* font-family: 'Josefin Sans', sans-serif; */
+  }
+  
+  .section-about-us button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, rgba(253,29,29,1) 10%, rgba(223,114,5,1) 56%);
+    /* font-family: 'Josefin Sans', sans-serif; */
+  }
+  
+  .navbar-lists{
+    display: flex;
+    gap: 4.8rem;
+  }
+  
+  .navbar-link:link,
+  .navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--helper);
+    font-family: 'Mochiy Pop One', sans-serif;
+    transition: color all 0.3s linear;
+  }
+  
+  .navbar-link:hover,
+  .navbar-link:active
+  {
+    color: var(--black);
+  
+  }
+
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .column img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
+  .common-heading{
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+    position: relative;
+    color:var(--helper);
+  }
+  .section{
+    padding: 3rem ;
+  }
+  
+  .container{
+    max-width: 140rem;
+    margin:0 auto;
+  }
